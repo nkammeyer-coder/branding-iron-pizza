@@ -23,7 +23,7 @@ body {
 
 h1, h2, .logo {
   font-family: Rye, Georgia, serif;
-  letter-spacing: 0.03em;
+  
 }
 
 header {
@@ -68,7 +68,7 @@ header {
  .hero-content {
     margin-top: 1rem;
   }
-  
+
 .section h2 {
   text-align: center;
 }
