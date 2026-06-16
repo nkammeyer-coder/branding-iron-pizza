@@ -241,26 +241,66 @@ footer {
 }
 
 .catering .button {
-  martin-top: 1rem;
+  margin-top: 1rem;
 }
 
 @media screen and (max-width: 760px) {
+  .nav {
+    padding: 1rem;
+  }
+
+  .logo {
+    font-size: clamp(2.6rem, 14vw, 4rem);
+    line-height: 1.15;
+    text-align: center;
+  }
+
   .menu-button {
+    display: block;
+    margin-top: 1rem;
+  }
+
+  .nav-links {
     display: none;
   }
-  .logo {
-    font-size: 1.4rem;
 
+  .nav-links.open {
+    display: grid;
+    position: static;
+    margin-top: 1rem;
+    width: 100%;
+    background: var(--dark);
+    padding: 1rem;
+    border-radius: 0.75rem;
+    text-align: center;
   }
+
   .hero-banner h1 {
-    font-size: 2.2rem;
-    top: 35%;
+    font-size: clamp(1.4rem, 8vw, 2.2rem);
     line-height: 1.1;
+    top: 35%;
+    white-space: normal;
+    width: 95%;
+  }
+
+  .cards,
+  .cards.three,
+  .special-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (min-width: 761px) {
+  .menu-button {
+    display: none;
   }
 
   .nav-links {
     display: flex;
-    font-size: 1rem;
+  }
+
+  .nav {
+    flex-direction: row;
   }
 
   .cards {
@@ -272,16 +312,6 @@ footer {
   }
 
   .special-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media screen and (min-width: 1000px) {
-  .cards {
-    grid-template-columns: repeat(4, 1fr);
-  }
-
-  .cards.three {
     grid-template-columns: repeat(3, 1fr);
   }
 }
