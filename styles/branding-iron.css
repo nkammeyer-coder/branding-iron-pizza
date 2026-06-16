@@ -237,7 +237,7 @@ footer {
 
 @media screen and (max-width: 760px) {
   .nav {
-    padding: 0.5rem, 1rem;
+    padding: 0.5rem 1rem;
   }
 
   .logo {
@@ -269,7 +269,7 @@ footer {
     text-align: center;
   }
   .hero-banner {
-    margin-top: -1rem;
+    margin-top: -2.5rem;
   }
 
   .hero-banner h1 {
@@ -284,7 +284,11 @@ footer {
     margin-left: -1rem;
     border-radius: 0.5rem;
   }
-
+  .intro {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  
   .cards,
   .cards.three,
   .special-grid {
