@@ -78,6 +78,7 @@ header {
 }
 
 .menu-button {
+  display: none;
   background: var(--cream);
   color: var(--dark);
   border: none;
@@ -252,8 +253,6 @@ footer {
     margin-top: 1rem;
   }
 
-  }
-
   .nav-links {
     display: none;
   }
@@ -284,8 +283,8 @@ footer {
     margin-left: -1rem;
     border-radius: 0.5rem;
   }
-  .intro {
-    padding-top: 20rem;
+  .hero-content {
+    margin-top: 1rem;
   }
 
   .cards,
